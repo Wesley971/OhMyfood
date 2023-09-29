@@ -1,11 +1,13 @@
-@media screen and (min-width: 767.68px) {
-  header {
+@media (max-width: 767.68px) {
+  nav {
     display: flex;
     width: 100%;
-  }
-  header img {
-    font-size: 15px;
     justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+  }
+  nav img {
+    height: 50px;
   }
 }
 body {
