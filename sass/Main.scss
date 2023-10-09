@@ -1,1 +1,16 @@
-@import "libs/responsive.scss"
+@import "layout/header";
+@import "layout/footer";
+@import "utils/variable";
+
+header{
+    
+    input{
+        color:$black;
+        background: $light-grey;
+        
+    }
+}
+::placeholder{
+    color: $black;
+
+}

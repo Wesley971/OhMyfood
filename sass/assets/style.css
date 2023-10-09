@@ -1,14 +1,39 @@
-@media (max-width: 767.68px) {
-  nav {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    background-color: aliceblue;
-  }
-  nav img {
-    height: 50px;
-  }
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header img {
+  padding: 15px;
+  height: 25px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 3;
+  width: 100%;
+}
+form label {
+  outline: invert;
+}
+form input {
+  display: flex;
+  border-left: none;
+  border-right: none;
+  padding: 10px 20px 10px 20px;
+}
+
+header input {
+  color: #101010;
+  background: #EAEAEA;
+}
+
+::placeholder {
+  color: #101010;
 }
 
 /*# sourceMappingURL=style.css.map */

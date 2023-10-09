@@ -1,0 +1,32 @@
+
+header{
+display: flex;
+flex-wrap: wrap;
+justify-content:center;
+align-items: center;
+flex-direction: column;
+
+
+    img{ 
+        padding: 15px;
+        height: 25px;
+    } 
+   
+    
+} 
+form{ display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 3;
+    width: 100%;
+    
+    label{
+        outline:invert
+    }
+    input{
+       display: flex;
+        border-left: none;
+        border-right:none ;
+        padding: 10px 20px 10px 20px;
+    }
+}
