@@ -1,16 +1,24 @@
 @import "layout/header";
 @import "layout/footer";
 @import "utils/variable";
+@import "components/button";
 
 header{
     
+    
+    .fa-solid{
+        color:$grey;
+    }
     input{
         color:$black;
         background: $light-grey;
         
+        
     }
 }
 ::placeholder{
+    
     color: $black;
 
 }
+

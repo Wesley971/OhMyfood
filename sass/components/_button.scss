@@ -1,0 +1,10 @@
+
+$primary:#9356DC;
+$secondary:#FF79DA; 
+
+.btn{
+    border-radius: 15px ;
+    border: $primary 1px solid ;
+    color: white;
+    background:linear-gradient($secondary,$primary) ;
+}

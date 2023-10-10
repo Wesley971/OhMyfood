@@ -1,15 +1,17 @@
-
+body {
+    margin: 0;
+}
 header{
 display: flex;
 flex-wrap: wrap;
 justify-content:center;
-align-items: center;
 flex-direction: column;
 
 
     img{ 
         padding: 15px;
         height: 25px;
+        object-fit: contain;
     } 
    
     
@@ -17,16 +19,26 @@ flex-direction: column;
 form{ display: flex;
     justify-content: center;
     align-items: center;
-    flex-grow: 3;
-    width: 100%;
     
-    label{
-        outline:invert
-    }
+    
+    
     input{
        display: flex;
-        border-left: none;
-        border-right:none ;
-        padding: 10px 20px 10px 20px;
-    }
+        border: none;
+        height: 40px;
+        box-shadow: 0 20px 10px -20px rgba(0,0,0,0.45) inset;
+            
+        &[type=text]    {
+                flex-grow: 2;
+                text-align: center;
+                
+                }
+            }
+    label{
+        position: absolute;
+        margin-left: -130px;
+    }        
+.fa-solid{
+    float: right;
+}
 }
