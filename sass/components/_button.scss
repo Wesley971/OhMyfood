@@ -1,10 +1,37 @@
 
 $primary:#9356DC;
 $secondary:#FF79DA; 
-
+$light-grey-2:#F6F6F6;
+$grey-2:#7E7E7E;
 .btn{
-    border-radius: 15px ;
-    border: $primary 1px solid ;
+    border-radius: 25px ;
+    border: none ;
     color: white;
-    background:linear-gradient($secondary,$primary) ;
+    background:linear-gradient($button-gradient) ;
+    padding: 12px;
+    box-shadow: 0px 5px 11px 0px rgba(44, 43, 43, 0.384);
+    &__:hover{
+        border: $primary;
+    }
+
 }
+
+.btn-fonc{
+    display: flex;
+   font-weight:500 ;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    background: #F6F6F6;
+    gap:20px;
+
+    .fa-solid{
+        color: $grey-2; 
+       
+        
+    }
+    .fa-store{
+        color: $primary;
+    }
+}
+
