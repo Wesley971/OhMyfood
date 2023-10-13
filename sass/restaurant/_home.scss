@@ -25,6 +25,9 @@ $light-grey-2:#F6F6F6;
     }
 }
 
+.fonction-main{
+    margin-left: 20px;
+}
 .fonction{
     display: flex;
     flex-direction: column;
@@ -33,4 +36,12 @@ $light-grey-2:#F6F6F6;
     gap: 15px;
     background: white;
 
+}
+
+.restaurants{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding: 15px;
+    background-color: $light-grey-2;
 }

@@ -20,7 +20,7 @@ $grey-2:#7E7E7E;
     display: flex;
    font-weight:500 ;
     border-radius: 20px;
-    padding: 30px;
+    padding: 25px 30px 25px 30px;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     background: #F6F6F6;
     gap:20px;
@@ -33,5 +33,16 @@ $grey-2:#7E7E7E;
     .fa-store{
         color: $primary;
     }
+}
+
+.rounded-purple{
+    margin-left: -46px;
+    border-radius: 30px;
+    padding: 7px;
+    background-color: $primary;
+    line-height: 10px;
+    color:white;
+    font-size: 15px;
+
 }
 

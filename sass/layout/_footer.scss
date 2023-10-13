@@ -1,0 +1,33 @@
+$grey:#353535;
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    background-color: $grey;
+    color: white;
+    padding: 20px;
+        
+        h2 {
+        font-size: 15px;
+        font-family:'Shrikhand', serif;
+        
+    }
+    
+    p {
+        display: flex;
+        margin: 5px 5px 5px 0;
+    }
+
+    .icon-cutlery{
+
+        margin-right: 15px;
+        
+    }
+
+    .icon-hands{
+        margin-right: 10px;
+    }
+
+    
+}
