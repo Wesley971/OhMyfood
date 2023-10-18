@@ -4,10 +4,16 @@
 @import "utils/variable";
 @import "components/button";
 @import "components/card";
+@import "restaurant/pages";
 
 
 body{
     font-family: 'Roboto', sans-serif;
+    a{
+        text-decoration: none;
+        color: $black;
+
+    }
 }
 header{
     

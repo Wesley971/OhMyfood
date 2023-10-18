@@ -72,7 +72,7 @@ form label {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 15px;
+  padding: 15px 15px 50px 15px;
   background-color: #F6F6F6;
 }
 
@@ -82,7 +82,7 @@ footer {
   justify-content: left;
   background-color: #353535;
   color: white;
-  padding: 20px;
+  padding: 5px 20px 20px 25px;
 }
 footer h2 {
   font-size: 15px;
@@ -106,8 +106,11 @@ footer .icon-hands {
   background: linear-gradient(#FF79DA, #9356DC);
   padding: 12px;
   box-shadow: 0px 5px 11px 0px rgba(44, 43, 43, 0.384);
+  cursor: pointer;
+  transition: opacity 400ms;
 }
-.btn__:hover {
+.btn:hover {
+  opacity: 0.5;
   border: #9356DC;
 }
 
@@ -121,9 +124,10 @@ footer .icon-hands {
   gap: 20px;
 }
 .btn-fonc .fa-solid {
+  cursor: pointer;
   color: #7E7E7E;
 }
-.btn-fonc .fa-store {
+.btn-fonc .fa-solid:hover {
   color: #9356DC;
 }
 
@@ -176,10 +180,84 @@ footer .icon-hands {
   margin-right: 40px;
   align-self: center;
   font-weight: 300;
+  cursor: pointer;
+  transition: background 400ms;
+}
+.card-icon:active {
+  background: black;
+}
+
+.card-menu {
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.card-menu h3 {
+  font-weight: 500;
+}
+
+.header-page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header-page .fa-solid {
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: -70px;
+}
+
+.main-menu img {
+  display: flex;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.page-section {
+  padding: 15px;
+}
+.page-section h1 {
+  display: flex;
+  justify-content: left;
+  font-weight: 400;
+  font-family: "Shrikhand";
+  margin: 0;
+}
+
+.title-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-page .fa-regular {
+  margin-left: 15px;
+  font-size: x-large;
+}
+
+.starter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.starter h4 {
+  font-weight: 300;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding: 20px 10px 20px 20px;
+  font-weight: 500;
 }
 
 body {
   font-family: "Roboto", sans-serif;
+}
+body a {
+  text-decoration: none;
+  color: #101010;
 }
 
 header .fa-solid {

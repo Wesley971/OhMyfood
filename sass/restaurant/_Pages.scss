@@ -1,0 +1,70 @@
+@import "../utils/variable";
+
+.header-page{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    .fa-solid{
+        font-size: 25px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: -70px;
+    }
+
+
+}
+.main-menu{
+    img{
+        display: flex;
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+    }
+}
+.page-section{
+    
+    padding: 15px;
+    
+    
+    h1{
+        display: flex;
+        justify-content: left;
+        font-weight: 400;
+        font-family:'Shrikhand';
+        
+        
+        margin: 0;
+    }
+
+}
+
+.title-page{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .fa-regular{
+
+        margin-left: 15px;
+        font-size: x-large;
+    }
+
+
+
+}
+.starter{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h4{
+        font-weight:300 ;
+    }
+}
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 20px 10px 20px 20px;
+    font-weight: 500;
+}
