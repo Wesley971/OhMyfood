@@ -64,3 +64,14 @@ border-radius: 15px;
         font-weight: 500;
     }
 }
+.badge{
+right: 0;
+position: absolute;
+background-color: $tertiary;
+margin-right: 15px;
+margin-top: 15px;
+padding: 5px 10px 5px 10px;
+border-radius: 2px;
+font-size: 15px;
+color:$green ;
+}
