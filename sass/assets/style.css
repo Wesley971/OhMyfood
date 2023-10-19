@@ -75,6 +75,11 @@ form label {
   padding: 15px 15px 50px 15px;
   background-color: #F6F6F6;
 }
+.restaurants .home-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
 footer {
   display: flex;
@@ -117,7 +122,7 @@ footer .icon-hands {
   display: flex;
   font-weight: 500;
   border-radius: 20px;
-  padding: 25px 30px 25px 30px;
+  padding: 25px 0px 25px 30px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   background: #F6F6F6;
   gap: 20px;
@@ -131,7 +136,7 @@ footer .icon-hands {
 }
 
 .rounded-purple {
-  margin-left: -46px;
+  margin-left: -40px;
   border-radius: 30px;
   padding: 7px;
   background-color: #9356DC;
@@ -316,6 +321,21 @@ footer .icon-hands {
   align-items: center;
   margin: 15px;
   padding: 15px 45px 15px 45px;
+}
+
+@media (min-width: 767.98px) {
+  .fonction {
+    flex-direction: row;
+  }
+}
+.restaurants .home-cards {
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.restaurants .home-cards .card {
+  min-width: 354px;
 }
 
 body {

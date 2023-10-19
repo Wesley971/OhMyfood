@@ -1,3 +1,23 @@
-@media (max-width:1024px) {
-   
+@media (min-width:767.98px) {
+
+.fonction{
+    flex-direction: row;
+}    
+
+}
+
+.restaurants{
+    
+        .home-cards{
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 30px
+            ;
+
+            .card{
+                min-width: 354px;
+            }
+        }
+    
 }
