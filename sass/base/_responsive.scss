@@ -1,23 +1,98 @@
 @media (min-width:767.98px) {
 
+
+// Main home page
 .fonction{
     flex-direction: row;
+
+    .btn-fonc{
+        width: 28%;
+    }
 }    
 
-}
+
 
 .restaurants{
     
+    
         .home-cards{
-            justify-content: center;
+            justify-content: space-between;
             flex-direction: row;
             flex-wrap: wrap;
             gap: 30px
             ;
 
-            .card{
-                min-width: 354px;
-            }
+          a{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 47%;
+          }  
         }
+
     
+}
+// footer
+
+footer {
+    padding-top: 50px;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+
+
+    h2{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .footer-home{
+        display: flex;
+        align-items: center;
+    }
+} 
+
+
+
+}
+
+
+@media (min-width:1024px){
+
+    // main
+
+.fonction-main{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 90px 25px 90px;
+    
+    h1{
+        margin-left: 15px;
+    }
+}
+
+
+
+    .fonction{
+        justify-content: space-between;
+        
+
+        .btn-fonc{
+            
+        }
+    }
+
+
+
+ .restaurants{
+    padding:30px 110px 50px 110px;
+
+    .home-cards{
+        
+        gap:45px;
+    }
+
+    a{
+        max-width: 48%;
+    }
+ }   
 }

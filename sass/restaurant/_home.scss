@@ -27,7 +27,7 @@
 }
 
 .fonction-main{
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .fonction{
     display: flex;
@@ -40,9 +40,7 @@
 }
 
 .restaurants{
-    display: flex;
-    flex-direction: column;
-    gap:20px;
+    
     padding: 15px 15px 50px 15px;
     background-color: $light-grey-2;
     
