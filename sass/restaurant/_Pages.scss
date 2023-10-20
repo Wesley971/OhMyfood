@@ -1,5 +1,13 @@
 @import "../utils/variable";
 
+
+
+.all-menu{
+    display: flex;
+    justify-content: center;
+
+}
+
 .header-menu {
     
     
@@ -49,6 +57,7 @@
     border-radius: 40px;
     position: relative;
     margin-top: -45px;
+    width: 100%;
 
     
         
