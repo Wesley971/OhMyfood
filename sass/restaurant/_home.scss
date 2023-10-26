@@ -1,6 +1,18 @@
 @import "../utils/variable";
 
-
+.loader{
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    
+        &-bar{
+            background-color: $black;
+            height: 100%;
+            width: 3px;
+        }
+}
 .menu{
     display: flex;
     flex-direction: column;

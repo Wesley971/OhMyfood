@@ -34,6 +34,19 @@ form label {
   margin-left: -130px;
 }
 
+.loader {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  width: 3px;
+  height: 3px;
+}
+.loader-bar {
+  background-color: #101010;
+  height: 100%;
+  width: 3px;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -161,6 +174,16 @@ footer .icon-hands {
   opacity: 0.5;
 }
 
+@property --color-1 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #9356DC;
+}
+@property --color-2 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #FF79DA;
+}
 .card {
   display: flex;
   flex-direction: column;
@@ -182,6 +205,15 @@ footer .icon-hands {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
+  transition: transform 800ms;
+}
+.card-content:hover {
+  font-style: italic;
+  justify-content: center;
+  transform: translateY(-5px);
+  transition: transform 200ms;
+  animation: checkmark 1000ms forwards;
 }
 .card-txt {
   margin-left: 15px;
@@ -201,18 +233,81 @@ footer .icon-hands {
   align-self: center;
   font-weight: 300;
   cursor: pointer;
-  transition: background 400ms;
 }
-.card-icon:active {
-  background: black;
+.card .fa-solid {
+  opacity: 0;
+  position: absolute;
+  color: #9356DC;
+  background-clip: text;
+  transition: opacity 700ms;
+}
+.card .fa-solid:hover {
+  opacity: 1;
 }
 
+@keyframes checkmark {}
 .card-menu {
   border-radius: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+  left: -2000px;
+  animation: slidecard 2000ms 0s ease-out forwards;
+}
+.card-menu:hover {
+  justify-content: right;
+  background-color: #FF79DA;
+  border-radius: 20px;
+  width: 100%;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  box-sizing: border-box;
 }
 .card-menu h3 {
   font-weight: 500;
+}
+
+@keyframes slidecard {
+  0% {
+    transform: translateX(-999px);
+  }
+  100% {
+    transform: translateX(0px);
+    left: 0;
+  }
+}
+.card-slow {
+  animation-delay: 200ms;
+}
+
+.card-veryslow {
+  animation-delay: 400ms;
+}
+
+.card-reallyslow {
+  animation-delay: 500ms;
+}
+
+.card-normal--plat {
+  animation-delay: 600ms;
+}
+
+.card-slow--plat {
+  animation-delay: 800ms;
+}
+
+.card-veryslow--plat {
+  animation-delay: 1000ms;
+}
+
+.card-normal--dessert {
+  animation-delay: 1200ms;
+}
+
+.card-slow--dessert {
+  animation-delay: 1400ms;
+}
+
+.card-veryslow--dessert {
+  animation-delay: 1600ms;
 }
 
 .badge {
@@ -266,7 +361,7 @@ footer .icon-hands {
 
 .main-menu {
   background-color: #F6F6F6;
-  border-radius: 40px;
+  border-radius: 40px 40px 0 0;
   position: relative;
   margin-top: -45px;
   width: 100%;
@@ -274,6 +369,7 @@ footer .icon-hands {
 
 .menu-section {
   padding: 15px;
+  transform-origin: top;
 }
 .menu-section h1 {
   display: flex;
@@ -285,18 +381,31 @@ footer .icon-hands {
 
 .title-page {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .title-page .fa-regular {
   margin-left: 15px;
   font-size: x-large;
+}
+.title-page .fa-solid {
+  font-size: x-large;
+  opacity: 0;
+  position: relative;
+  left: -24px;
+  color: #9356DC;
+  transition: opacity 700ms;
+}
+.title-page .fa-solid:hover {
+  opacity: 1;
 }
 
 .starter {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  animation: menu 2000ms 0 ease-in-out backwards;
 }
 .starter h4 {
   border-bottom: #99E2D0 solid 2px;
@@ -311,6 +420,14 @@ footer .icon-hands {
   margin-bottom: 12px;
 }
 
+@keyframes menu {
+  0% {
+    transform: translateX(-999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .price {
   display: flex;
   justify-content: center;
