@@ -174,16 +174,6 @@ footer .icon-hands {
   opacity: 0.5;
 }
 
-@property --color-1 {
-  syntax: "<color>";
-  inherits: true;
-  initial-value: #9356DC;
-}
-@property --color-2 {
-  syntax: "<color>";
-  inherits: true;
-  initial-value: #FF79DA;
-}
 .card {
   display: flex;
   flex-direction: column;
@@ -205,15 +195,6 @@ footer .icon-hands {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: relative;
-  transition: transform 800ms;
-}
-.card-content:hover {
-  font-style: italic;
-  justify-content: center;
-  transform: translateY(-5px);
-  transition: transform 200ms;
-  animation: checkmark 1000ms forwards;
 }
 .card-txt {
   margin-left: 15px;
@@ -245,21 +226,12 @@ footer .icon-hands {
   opacity: 1;
 }
 
-@keyframes checkmark {}
 .card-menu {
   border-radius: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   position: relative;
   left: -2000px;
   animation: slidecard 2000ms 0s ease-out forwards;
-}
-.card-menu:hover {
-  justify-content: right;
-  background-color: #FF79DA;
-  border-radius: 20px;
-  width: 100%;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-  box-sizing: border-box;
 }
 .card-menu h3 {
   font-weight: 500;
@@ -310,6 +282,46 @@ footer .icon-hands {
   animation-delay: 1600ms;
 }
 
+.price-checkmark {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+.price-checkmark:hover .checkmark {
+  width: 100%;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding: 20px 15px 12px 20px;
+  font-weight: 600;
+  color: #353535;
+}
+
+.checkmark {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 0%;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  transition: all 1000ms ease-out;
+}
+.checkmark .fa-regular {
+  animation: circle 1000ms 100ms ease-out;
+  font-size: 35px;
+}
+
+@keyframes circle {
+  from {
+    transform: rotateX(190px);
+  }
+  to {
+    transform: rotateX(0px);
+  }
+}
 .badge {
   right: 0;
   position: absolute;
@@ -428,15 +440,6 @@ footer .icon-hands {
     transform: translateX(0);
   }
 }
-.price {
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  padding: 20px 15px 12px 20px;
-  font-weight: 600;
-  color: #353535;
-}
-
 .section__btn-menu {
   display: flex;
   justify-content: center;
