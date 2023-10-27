@@ -91,11 +91,38 @@ border-radius: 15px;
     position: relative;
     left: -2000px;
     animation: slidecard 2000ms 0s ease-out forwards ;
-
+    
+    &:hover{
+        
+            
+        
+    }
     
     h3{
         font-weight: 500;
     }
+    .checkmark{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 0%;
+    border-radius: 0 15px 15px 0;
+    background-color: $light-green;
+    transition: all 1000ms ease-out;
+
+
+    .fa-regular{
+        
+        
+        color: aliceblue;
+        font-size: 35px;
+
+        
+    }
+    
+}
+
+    
     
 }
 
@@ -151,13 +178,19 @@ border-radius: 15px;
     animation-delay: 1600ms;
 }
 
-.price-checkmark{
+.card-content-slide{
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: space-between;
     
-     
+    .card-slide{
+            
+        display: flex;
+        justify-content: end;}
     &:hover{
+        
+        
+        
         
         
 
@@ -166,6 +199,10 @@ border-radius: 15px;
             width: 100%;
             
             
+        }
+        
+        i{
+            animation: circle 500ms ease-out;
         }
         
     }
@@ -192,23 +229,28 @@ border-radius: 15px;
     width: 0%;
     border-radius: 0 15px 15px 0;
     background-color: $light-green;
-    transition: all 1000ms ease-out;
+    transition: all 800ms ease-in;
 
 
     .fa-regular{
         
-        animation: circle 1000ms 100ms ease-out;
         
+        color: aliceblue;
         font-size: 35px;
+
+        
+    }
+    .card-content-text{
+
     }
     
 }
 @keyframes circle {
     from{
-        transform :rotateX(190px)
+        transform:rotate(-270deg)
     }
     to{
-        transform: rotateX(0px);
+        transform: rotate(0);
     }
 
 }

@@ -236,6 +236,19 @@ footer .icon-hands {
 .card-menu h3 {
   font-weight: 500;
 }
+.card-menu .checkmark {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 0%;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  transition: all 1000ms ease-out;
+}
+.card-menu .checkmark .fa-regular {
+  color: aliceblue;
+  font-size: 35px;
+}
 
 @keyframes slidecard {
   0% {
@@ -282,13 +295,20 @@ footer .icon-hands {
   animation-delay: 1600ms;
 }
 
-.price-checkmark {
+.card-content-slide {
   display: flex;
   flex-direction: row;
-  justify-content: right;
+  justify-content: space-between;
 }
-.price-checkmark:hover .checkmark {
+.card-content-slide .card-slide {
+  display: flex;
+  justify-content: end;
+}
+.card-content-slide:hover .checkmark {
   width: 100%;
+}
+.card-content-slide:hover i {
+  animation: circle 500ms ease-out;
 }
 
 .price {
@@ -307,19 +327,18 @@ footer .icon-hands {
   width: 0%;
   border-radius: 0 15px 15px 0;
   background-color: #99E2D0;
-  transition: all 1000ms ease-out;
+  transition: all 800ms ease-in;
 }
 .checkmark .fa-regular {
-  animation: circle 1000ms 100ms ease-out;
+  color: aliceblue;
   font-size: 35px;
 }
-
 @keyframes circle {
   from {
-    transform: rotateX(190px);
+    transform: rotate(-270deg);
   }
   to {
-    transform: rotateX(0px);
+    transform: rotate(0);
   }
 }
 .badge {
