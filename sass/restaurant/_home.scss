@@ -1,18 +1,69 @@
 @import "../utils/variable";
 
+
+
+.laoder-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background:linear-gradient($primary,$secondary);
+    z-index: 1;
+    animation: afterload 800ms ease-in-out 1000ms  1 forwards ;
+
+}
+
+@keyframes afterload{
+    50%{
+        opacity: 0.1;
+    
+    }
+   
+
+    100%{
+        opacity: 0;
+        z-index: -1;
+        
+    }
+}
+
 .loader{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+
     position: absolute;
-    width: 3px;
-    height: 3px;
+    top:50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border: 20px solid ;
+    border-top-color: $primary;
+    border-bottom-color: $secondary;
+    border-right-color: white;
+    border-left-color: white;
+    border-radius: 30%;
+    animation: spin 2000ms infinite  ease-out ;
     
-        &-bar{
-            background-color: $black;
-            height: 100%;
-            width: 3px;
-        }
+
 }
+@keyframes spin{
+    0%{
+        transform: translate(-50%,-50%) rotate(0deg);
+        
+    }
+
+
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+        
+    }
+    
+}
+
 .menu{
     display: flex;
     flex-direction: column;
