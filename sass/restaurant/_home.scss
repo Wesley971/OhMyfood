@@ -1,6 +1,8 @@
 @import "../utils/variable";
 
-
+main{
+    text-overflow:ellipsis;
+}
 
 .laoder-container{
     position: fixed;

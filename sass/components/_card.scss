@@ -23,13 +23,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        // transition: transform  800ms;
-        
-        // &:hover{
-            // font-style: italic;
-            // transition: transform 200ms;
-           
-        // }
+       
     
         
         
@@ -71,7 +65,6 @@
         opacity: 0;
         position: absolute;
         color: $primary;
-        background-clip:text ;
         transition: opacity 700ms;
         
         &:hover{
@@ -90,13 +83,9 @@ border-radius: 15px;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     position: relative;
     left: -2000px;
+    overflow: hidden;
     animation: slidecard 2000ms 0s ease-out forwards ;
     
-    &:hover{
-        
-            
-        
-    }
     
     h3{
         font-weight: 500;
@@ -105,23 +94,43 @@ border-radius: 15px;
     display: flex;
     align-items: center;
     overflow: hidden;
-    width: 0%;
+    // width: 0%;
     border-radius: 0 15px 15px 0;
     background-color: $light-green;
     transition: all 1000ms ease-out;
 
+    &:hover{
+        margin-right: 0;
+        
+    }
 
-    .fa-regular{
+
+    .fa-solid{
         
         
         color: aliceblue;
-        font-size: 35px;
+        font-size: 20px;
+        margin:15px;
 
         
     }
     
+    
 }
+.card-txt{
+    
 
+    h3,p{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        
+        
+        
+        
+        
+        
+    }
+}
     
     
 }
@@ -182,27 +191,32 @@ border-radius: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+    margin-right: -50px;
+    transition: all 1000ms ease-out;
+
+    .card-content{
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        
+    }
     .card-slide{
             
         display: flex;
-        justify-content: end;}
+        justify-content: end;
+        
+   
+    
+    }
     &:hover{
-        
-        
-        
-        
-        
 
-        .checkmark{
-           
-            width: 100%;
-            
-            
-        }
+        margin-right: 0;
+        
+        
+        
         
         i{
-            animation: circle 500ms ease-out;
+            animation: circle 800ms ease-out;
         }
         
     }
@@ -225,11 +239,8 @@ border-radius: 15px;
 .checkmark{
     display: flex;
     align-items: center;
-    overflow: hidden;
-    width: 0%;
     border-radius: 0 15px 15px 0;
     background-color: $light-green;
-    transition: all 800ms ease-in;
 
 
     .fa-regular{
@@ -240,9 +251,7 @@ border-radius: 15px;
 
         
     }
-    .card-content-text{
 
-    }
     
 }
 @keyframes circle {

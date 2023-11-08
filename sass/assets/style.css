@@ -34,6 +34,10 @@ form label {
   margin-left: -130px;
 }
 
+main {
+  text-overflow: ellipsis;
+}
+
 .laoder-container {
   position: fixed;
   top: 0;
@@ -254,7 +258,6 @@ footer .icon-hands {
   opacity: 0;
   position: absolute;
   color: #9356DC;
-  background-clip: text;
   transition: opacity 700ms;
 }
 .card .fa-solid:hover {
@@ -266,6 +269,7 @@ footer .icon-hands {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   position: relative;
   left: -2000px;
+  overflow: hidden;
   animation: slidecard 2000ms 0s ease-out forwards;
 }
 .card-menu h3 {
@@ -275,14 +279,21 @@ footer .icon-hands {
   display: flex;
   align-items: center;
   overflow: hidden;
-  width: 0%;
   border-radius: 0 15px 15px 0;
   background-color: #99E2D0;
   transition: all 1000ms ease-out;
 }
-.card-menu .checkmark .fa-regular {
+.card-menu .checkmark:hover {
+  margin-right: 0;
+}
+.card-menu .checkmark .fa-solid {
   color: aliceblue;
-  font-size: 35px;
+  font-size: 20px;
+  margin: 15px;
+}
+.card-menu .card-txt h3, .card-menu .card-txt p {
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 @keyframes slidecard {
@@ -334,16 +345,23 @@ footer .icon-hands {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-right: -50px;
+  transition: all 1000ms ease-out;
+}
+.card-content-slide .card-content {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .card-content-slide .card-slide {
   display: flex;
   justify-content: end;
 }
-.card-content-slide:hover .checkmark {
-  width: 100%;
+.card-content-slide:hover {
+  margin-right: 0;
 }
 .card-content-slide:hover i {
-  animation: circle 500ms ease-out;
+  animation: circle 800ms ease-out;
 }
 
 .price {
@@ -358,16 +376,14 @@ footer .icon-hands {
 .checkmark {
   display: flex;
   align-items: center;
-  overflow: hidden;
-  width: 0%;
   border-radius: 0 15px 15px 0;
   background-color: #99E2D0;
-  transition: all 800ms ease-in;
 }
 .checkmark .fa-regular {
   color: aliceblue;
   font-size: 35px;
 }
+
 @keyframes circle {
   from {
     transform: rotate(-270deg);
