@@ -34,10 +34,6 @@ form label {
   margin-left: -130px;
 }
 
-main {
-  text-overflow: ellipsis;
-}
-
 .laoder-container {
   position: fixed;
   top: 0;
@@ -371,17 +367,6 @@ footer .icon-hands {
   padding: 20px 15px 12px 20px;
   font-weight: 600;
   color: #353535;
-}
-
-.checkmark {
-  display: flex;
-  align-items: center;
-  border-radius: 0 15px 15px 0;
-  background-color: #99E2D0;
-}
-.checkmark .fa-regular {
-  color: aliceblue;
-  font-size: 35px;
 }
 
 @keyframes circle {

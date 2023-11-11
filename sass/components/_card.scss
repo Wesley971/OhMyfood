@@ -64,6 +64,7 @@
         
         opacity: 0;
         position: absolute;
+
         color: $primary;
         transition: opacity 700ms;
         
@@ -94,29 +95,28 @@ border-radius: 15px;
     display: flex;
     align-items: center;
     overflow: hidden;
-    // width: 0%;
     border-radius: 0 15px 15px 0;
     background-color: $light-green;
     transition: all 1000ms ease-out;
 
-    &:hover{
-        margin-right: 0;
+                    &:hover{
+                    margin-right: 0;
         
-    }
+                    }
 
+                        .fa-solid{
+        
+        
+                        color: aliceblue;
+                        font-size: 20px;
+                        margin:15px;
 
-    .fa-solid{
         
-        
-        color: aliceblue;
-        font-size: 20px;
-        margin:15px;
-
-        
-    }
+                    }
     
     
-}
+    }
+    
 .card-txt{
     
 
@@ -129,8 +129,8 @@ border-radius: 15px;
         
         
         
+        }
     }
-}
     
     
 }
@@ -236,25 +236,9 @@ border-radius: 15px;
     
 }
 
-.checkmark{
-    display: flex;
-    align-items: center;
-    border-radius: 0 15px 15px 0;
-    background-color: $light-green;
 
-
-    .fa-regular{
-        
-        
-        color: aliceblue;
-        font-size: 35px;
-
-        
-    }
-
-    
-}
 @keyframes circle {
+    
     from{
         transform:rotate(-270deg)
     }
@@ -266,6 +250,7 @@ border-radius: 15px;
 
 
 .badge{
+
 right: 0;
 position: absolute;
 background-color: $tertiary;
@@ -275,4 +260,5 @@ padding: 5px 10px 5px 10px;
 border-radius: 2px;
 font-size: 15px;
 color:$green ;
+
 }
