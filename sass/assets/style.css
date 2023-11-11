@@ -264,7 +264,7 @@ footer .icon-hands {
   border-radius: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   position: relative;
-  left: -9999px;
+  left: -5000px;
   overflow: hidden;
   animation: slidecard 2000ms 0s ease-out forwards;
 }
