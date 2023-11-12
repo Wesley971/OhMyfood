@@ -283,7 +283,7 @@ footer .icon-hands {
   position: relative;
   left: -5000px;
   overflow: hidden;
-  animation: slidecard 2000ms 0s ease-out forwards;
+  animation: slidecard 1500ms 0s ease-out forwards;
 }
 .card-menu h3 {
   font-weight: 500;
