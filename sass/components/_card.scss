@@ -94,20 +94,13 @@ border-radius: 15px;
     .checkmark{
     display: flex;
     align-items: center;
-    overflow: hidden;
-    border-radius: 0 15px 15px 0;
     background-color: $light-green;
     transition: all 1000ms ease-out;
-
-                    &:hover{
-                    margin-right: 0;
-        
-                    }
 
                         .fa-solid{
         
         
-                        color: aliceblue;
+                        color: white;
                         font-size: 20px;
                         margin:15px;
 
@@ -205,14 +198,10 @@ border-radius: 15px;
         display: flex;
         justify-content: end;
         
-   
-    
     }
     &:hover{
 
         margin-right: 0;
-        
-        
         
         
         i{

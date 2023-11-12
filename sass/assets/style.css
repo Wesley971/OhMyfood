@@ -291,16 +291,11 @@ footer .icon-hands {
 .card-menu .checkmark {
   display: flex;
   align-items: center;
-  overflow: hidden;
-  border-radius: 0 15px 15px 0;
   background-color: #99E2D0;
   transition: all 1000ms ease-out;
 }
-.card-menu .checkmark:hover {
-  margin-right: 0;
-}
 .card-menu .checkmark .fa-solid {
-  color: aliceblue;
+  color: white;
   font-size: 20px;
   margin: 15px;
 }
