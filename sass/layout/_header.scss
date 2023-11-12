@@ -1,6 +1,23 @@
+@import "../utils/variable";
+
 body {
     margin: 0;
 }
+
+header{
+    
+    
+    .fa-solid{
+        color:$grey;
+    }
+    input{
+        color:$black;
+        background: $light-grey;
+        
+        
+    }
+}
+
 .header-home{
 display: flex;
 flex-wrap: wrap;

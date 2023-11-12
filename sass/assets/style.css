@@ -2,6 +2,14 @@ body {
   margin: 0;
 }
 
+header .fa-solid {
+  color: #353535;
+}
+header input {
+  color: #101010;
+  background: #EAEAEA;
+}
+
 .header-home {
   display: flex;
   flex-wrap: wrap;
@@ -578,14 +586,6 @@ body {
 body a {
   text-decoration: none;
   color: #101010;
-}
-
-header .fa-solid {
-  color: #353535;
-}
-header input {
-  color: #101010;
-  background: #EAEAEA;
 }
 
 ::placeholder {
