@@ -1,5 +1,10 @@
 body {
   margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+body a {
+  text-decoration: none;
+  color: #101010;
 }
 
 header .fa-solid {
@@ -40,6 +45,10 @@ form input[type=text] {
 form label {
   position: absolute;
   margin-left: -130px;
+}
+
+::placeholder {
+  color: #101010;
 }
 
 .laoder-container {
@@ -579,17 +588,6 @@ footer .icon-hands {
     flex-grow: 0;
     padding: 15px 35px 15px 35px;
   }
-}
-body {
-  font-family: "Roboto", sans-serif;
-}
-body a {
-  text-decoration: none;
-  color: #101010;
-}
-
-::placeholder {
-  color: #101010;
 }
 
 /*# sourceMappingURL=style.css.map */
